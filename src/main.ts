@@ -1,9 +1,12 @@
 import { createApp } from 'vue'
+import App from '@/App'
+import '@/css/reset.scss'
+import '@/css/global.scss'
+import '@/utils/icon'
 import router from '@/router/index'
 import { key, store } from '@/store'
-import App from './App.vue'
-import styleImport from '@/utils/style-import'
-import '@/style/basic.styl'
 
 const app = createApp(App)
-styleImport(app).use(router).use(store, key).mount('#app')
+app.use(router)
+app.use(store, key)
+app.mount('#app')

@@ -1,32 +1,40 @@
-import { createRouter, createWebHashHistory, Router, RouteRecordRaw } from 'vue-router'
-import Home from '@/views/Home.vue'
-import Vuex from '@/views/Vuex.vue'
-import Test from '@/views/Test.vue'
-
-const routes: Array<RouteRecordRaw> = [
+import { createRouter, createWebHashHistory } from 'vue-router'
+import Enter from '@/views/Enter.vue'
+import NotFound from '@/views/404.vue'
+import NodePage from '@/views/NodePage.vue'
+import ToolPage from '@/views/ToolPage.vue'
+import UserInfo from '@/views/UserInfo.vue'
+import General from '@/views/General.vue'
+// 路由规则
+const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    component: Enter
   },
   {
-    path: '/vuex',
-    name: 'Vuex',
-    component: Vuex
+    path: '/nodePage',
+    component: NodePage
   },
   {
-    path: '/axios',
-    name: 'Axios',
-    component: () => import('@/views/Axios.vue') // 懒加载 Axios 组件
+    path: '/tool',
+    component: ToolPage
   },
   {
-    path: '/test',
-    name: 'Test',
-    component: Test
+    path: '/userInfo',
+    component: UserInfo
+  },
+  {
+    path: '/general',
+    component: General
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: '404',
+    component: NotFound
   }
 ]
 
-const router: Router = createRouter({
+const router = createRouter({
   history: createWebHashHistory(),
   routes
 })
