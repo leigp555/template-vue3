@@ -34,7 +34,6 @@
     }
   },
   "dependencies": {
-    "ant-design-vue": "^3.0.0-beta.3",
     "axios": "^0.21.1",
     "vue": "^3.2.6",
     "vue-router": "^4.0.11",
@@ -63,25 +62,13 @@
     "jest": "^26.6.3",
     "lint-staged": "^10.5.4",
     "prettier": "^2.2.1",
-    "stylus": "^0.54.8",
     "ts-jest": "^26.5.4",
     "typescript": "^4.5.4",
     "vite": "^2.5.1",
     "vue-jest": "^5.0.0-alpha.7",
     "vue-tsc": "^0.3.0",
-    "vue3-markdown-it": "^1.0.10",
-    "vite-plugin-style-import": "^1.2.1",
-    "vant": "^3.2.2",
-    "unplugin-auto-import": "^0.6.4",
-    "unplugin-vue-components": "^0.18.0",
     "qs": "^6.10.3",
     "sass": "^1.49.9",
-    "markdown-it-abbr": "^1.0.4",
-    "markdown-it-deflist": "^2.1.0",
-    "markdown-it-emoji": "^2.0.0",
-    "markdown-it-sub": "^1.0.0",
-    "markdown-it-sup": "^1.0.0",
-    "dayjs": "^1.11.0",
-    "@types/markdown-it-emoji": "^2.0.2"
+    "dayjs": "^1.11.0"
   }
 }
