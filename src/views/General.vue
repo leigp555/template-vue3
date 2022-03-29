@@ -37,7 +37,7 @@
 <script lang="ts">
 import { Popup } from 'vant'
 import { defineComponent, ref } from 'vue'
-import NodeList from '@/helperComponents/NodeList.vue'
+import NodeList from '@/components/NodeList.vue'
 
 export default defineComponent({
   components: {

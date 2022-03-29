@@ -44,7 +44,7 @@ import { NavBar, Popup } from 'vant'
 import { UserOutlined } from '@ant-design/icons-vue'
 // @ts-ignore
 import { defineComponent, reactive, ref } from 'vue'
-import PreviewNode from '@/helperComponents/PreviewNode.vue'
+import PreviewNode from '@/components/PreviewNode.vue'
 import { markDownPlugins } from '@/utils/markdownPlug'
 import nodeInitString from '@/utils/articleExample'
 
