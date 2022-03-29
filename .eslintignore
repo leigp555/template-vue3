@@ -1,4 +1,3 @@
-
 *.sh
 node_modules
 *.md
@@ -15,4 +14,5 @@ dist
 .eslintrc.js
 prettier.config.js
 /src/mock/*
+/public/icon.js
 
