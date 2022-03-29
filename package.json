@@ -41,7 +41,6 @@
   "dependencies": {
     "ant-design-vue": "^3.0.0-beta.3",
     "axios": "^0.21.1",
-    "element-plus": "^1.1.0-beta.7",
     "vue": "^3.2.6",
     "vue-router": "^4.0.11",
     "vuex": "^4.0.2"
@@ -73,7 +72,6 @@
     "ts-jest": "^26.5.4",
     "typescript": "^4.5.4",
     "vite": "^2.5.1",
-    "vite-plugin-element-plus": "0.0.12",
     "vue-jest": "^5.0.0-alpha.7",
     "vue-tsc": "^0.3.0",
     "vue3-markdown-it": "^1.0.10",
