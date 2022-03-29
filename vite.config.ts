@@ -18,15 +18,20 @@ export default defineConfig({
     port: 4500, // 设置服务启动端口号
     open: true, // 设置服务启动时是否自动打开浏览器
     cors: true // 允许跨域
-
-    // 设置代理，根据我们项目实际情况配置
-    // proxy: {
-    //   '/api': {
-    //     target: 'http://xxx.xxx.xxx.xxx:x000',
-    //     changeOrigin: true,
-    //     secure: false,
-    //     rewrite: (path) => path.replace('/api/', '/')
-    //   }
-    // },
+  },
+  build: {
+    chunkSizeWarningLimit: 8000,
+    rollupOptions: {
+      output: {
+        // 分包
+        manualChunks(id) {
+          let mid
+          if (id.includes('node_modules')) {
+            mid = id.toString().split('node_modules/')[1].split('/')[0].toString()
+          }
+          return mid
+        }
+      }
+    }
   }
 })
