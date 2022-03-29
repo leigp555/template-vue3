@@ -1,5 +1,6 @@
-export interface NavItem {
-  path: string
-  name: string
-  isActive: boolean
+export interface logType {
+  username: string
+  password: string
+  checkPass?: string
+  avatarSrc: string
 }
